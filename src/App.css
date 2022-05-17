@@ -1,0 +1,300 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.startPage {
+  position: absolute;
+  width: 50vw;
+  height: 45vh;
+  left: 420px;
+  top: 184px;
+
+  background: #ffffff;
+  border: 1px solid #f7f7f7;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player1Card {
+  position: absolute;
+  height: 25%;
+  width: 80%;
+  top: 10%;
+  background-color: #dcf6e4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.player1Card div {
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  top: 5%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.player2Card {
+  position: absolute;
+  height: 25%;
+  width: 80%;
+  top: 40%;
+  border-radius: 10px;
+  background-color: #f7efd5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.player2Card div {
+  position: absolute;
+  height: 90%;
+  width: 80%;
+  left: 20%;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.buttonStartGame {
+  position: absolute;
+  height: 20%;
+  width: 80%;
+  top: 70%;
+}
+.buttonStartGame input {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 5%;
+  right: 0%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  background: #4b7bff;
+  border-radius: 12px;
+  border: none;
+}
+
+.startGame div image {
+  position: absolute;
+  width: 20%;
+  height: 90%;
+  top: 5%;
+}
+.player1Card div p {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-family: Poppins;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: normal;
+  color: #869189;
+}
+.player2Card div p {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-family: Poppins;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #869189;
+}
+
+.player1Card div input {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  height: 40%;
+  border: none;
+  border-bottom: 1px solid #949494;
+  background-color: transparent;
+  padding: 0%;
+  padding-left: 5px;
+}
+
+.player2Card div input {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  height: 40%;
+  border: none;
+  border-bottom: 1px solid #949494;
+  background-color: transparent;
+  padding-left: 5px;
+}
+
+.game-column {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  background-color: #84a4fb;
+}
+.homePage {
+  border-radius: 20px;
+  background-color: white;
+  margin: 10vh 10vw 10vh 10vw;
+  padding: 0;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+.board {
+  border-radius: 20px;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40vw;
+  height: 35vw;
+  top: 63px;
+  background-color: #84a4fb;
+}
+.divider {
+  height: 1px;
+  width: 31vw;
+  align-self: center;
+  background-color: #949494;
+  margin-top: 0.7vw;
+  margin-bottom: 0.7vw;
+}
+.cell {
+  width: 3vw;
+  height: 3vw;
+  box-sizing: border-box;
+}
+.cell img {
+  width: 3vw;
+}
+.gameInfo {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 35vw;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.gameInfo h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+  /* identical to box height */
+  margin-bottom: 0;
+  color: #424242;
+}
+.message {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4vw;
+  color: #ff6600;
+}
+.status {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2vw;
+  color: #424242;
+}
+.playerCards {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 30vw;
+}
+.player1 {
+  display: flex;
+  flex-direction: row;
+  background-color: #dcf6e4;
+  border-radius: 20px;
+  height: 6vw;
+  width: 25vw;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+  padding-right: 5vw;
+}
+.player2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #f7efd5;
+  border-radius: 20px;
+  justify-content: space-between;
+  height: 6vw;
+  width: 25vw;
+  padding-right: 5vw;
+}
+.player1 div p:nth-child(1),
+.player2 div p:nth-child(1) {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  /* identical to box height */
+  color: #869189;
+  line-height: 1.4vw;
+}
+.player1 div p:nth-child(2),
+.player2 div p:nth-child(2) {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 0;
+}
+.player1 img,
+.player2 img {
+  margin-left: 1vw;
+  align-self: center;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 3vw;
+}
+.startButton {
+  font-family: Poppins;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  background: #4b7bff;
+  border-radius: 10px;
+  height: 3.8vw;
+  width: 25vw;
+  align-self: center;
+  border: none;
+  margin-bottom: 0.5vw;
+}
+.endButton {
+  font-family: Poppins;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: normal;
+  color: #cc0000;
+  background: #ffffff;
+  border: 1px solid #e5ecff;
+  box-sizing: border-box;
+  height: 3.8vw;
+  width: 25vw;
+  align-self: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
